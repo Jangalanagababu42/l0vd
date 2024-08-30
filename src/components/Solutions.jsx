@@ -63,11 +63,11 @@
 // export default Solutions;
 // src/components/Solutions.js
 // src/components/Solutions.js
-import React from 'react';
-import restaking from '../assets/restaking.svg';
-import testnet from '../assets/testnet.svg';
-import guides from '../assets/guides.svg';
-import staking from '../assets/staking.svg';
+
+import restaking from "../assets/restaking.svg";
+import testnet from "../assets/testnet.svg";
+import guides from "../assets/guides.svg";
+import staking from "../assets/staking.svg";
 
 const Solutions = () => {
   return (
@@ -89,10 +89,10 @@ const Solutions = () => {
             className="bg-blue-500	 text-white p-8 rounded-lg shadow-lg col-span-5 row-span-1 flex flex-col items-startjustify-between"
             style={{
               backgroundImage: `url(${staking})`,
-              backgroundPosition: 'right bottom',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'contain',
-              backgroundSize: '40% 70%',
+              backgroundPosition: "right bottom",
+              backgroundRepeat: "no-repeat",
+
+              backgroundSize: "40% 70%",
             }}
           >
             <h3 className="text-xl font-semibold mb-4">Staking</h3>
@@ -106,9 +106,9 @@ const Solutions = () => {
             className="bg-white p-5 rounded-lg shadow-lg col-span-4 flex flex-col items-startjustify-between"
             style={{
               backgroundImage: `url(${guides})`,
-              backgroundPosition: 'center bottom',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: '78% ',
+              backgroundPosition: "center bottom",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "78% ",
             }}
           >
             <h3 className="text-xl font-semibold mb-4">Guides</h3>
@@ -119,9 +119,9 @@ const Solutions = () => {
             className="bg-blue-400 text-white p-8 rounded-lg shadow-lg col-span-3 flex flex-col justify-between"
             style={{
               backgroundImage: 'url("/path/to/snapshots-bg.png")',
-              backgroundPosition: 'right bottom',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'contain',
+              backgroundPosition: "right bottom",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
             }}
           >
             <h3 className="text-xl font-semibold mb-4">Snapshots</h3>
@@ -131,15 +131,15 @@ const Solutions = () => {
               desired network , so you can sync the node in a few moments.
             </p>
           </div>
-          {/* Development */}{' '}
+          {/* Development */}{" "}
           <div className="grid grid-rows-1 col-span-4 gap-2">
             <div
               className="bg-blue-600 text-white p-8 rounded-lg shadow-lg col-span-4 row-span-1 flex flex-col justify-between"
               style={{
                 backgroundImage: 'url("/path/to/development-bg.png")',
-                backgroundPosition: 'right bottom',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'contain',
+                backgroundPosition: "right bottom",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain",
               }}
             >
               <h3 className="text-xl font-semibold mb-4">Development</h3>
@@ -151,9 +151,9 @@ const Solutions = () => {
               className="bg-transparent  p-8 rounded-lg shadow-lg col-span-4 row-span-1 flex flex-col items-startjustify-between"
               style={{
                 backgroundImage: `url(${restaking})`,
-                backgroundPosition: 'right bottom',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: '20% 50%',
+                backgroundPosition: "right bottom",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "20% 50%",
               }}
             >
               <h3 className="text-xl font-semibold mb-4">Restaking</h3>
@@ -165,9 +165,9 @@ const Solutions = () => {
             className="bg-gray-200 p-8 rounded-lg shadow-lg col-span-5 flex flex-col items-startjustify-between "
             style={{
               backgroundImage: `url(${testnet})`,
-              backgroundPosition: 'center bottom',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: '80% 50%',
+              backgroundPosition: "center bottom",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "80% 50%",
             }}
           >
             <h3 className="text-xl font-semibold mb-4 ">Testnets</h3>
