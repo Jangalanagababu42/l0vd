@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cube-container {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.cube-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  opacity: 0.9;
+  backface-visibility: hidden;
+}
+
+.cube-face:nth-child(1) {
+  transform: rotateY(0deg) translateZ(40px);
+}
+
+.cube-face:nth-child(2) {
+  transform: rotateY(90deg) translateZ(40px);
+}
+
+.cube-face:nth-child(3) {
+  transform: rotateX(90deg) translateZ(40px);
+}
+
+.cube-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Custom Global Styles */
+body {
+  @apply bg-white text-gray-900 antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom Utility Classes */
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.footer-logo {
+  @apply mx-auto md:mx-0 mb-2 w-16 h-auto;
+}
+
+.footer-links a {
+  @apply hover:text-blue-400;
+}
+
+/* Custom Card Styling */
+.custom-card {
+  @apply bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:scale-105;
+}
+
+/* Header Customization */
+.header {
+  @apply sticky top-0 z-50 bg-white shadow-md;
+}
+
+/* Button Styling */
+.btn-primary {
+  @apply bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow hover:bg-blue-700 transition-colors;
+}
+
+/* Marquee Tweaks */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  @apply whitespace-nowrap overflow-hidden;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-content {
+  display: inline-block;
+}
+
+/* Specific Overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+/* Additional responsive tweaks if needed */
+@media (min-width: 1440px) {
+  .container {
+    @apply px-6;
+  }
+}

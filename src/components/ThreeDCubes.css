@@ -1,0 +1,25 @@
+.cube {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 113, 227, 0.8); /* Blue color */
+  border: 1px solid rgba(0, 113, 227, 0.9); /* Slightly darker blue for edges */
+}
+
+/* Positioning each face */
+.front {
+  transform: rotateY(0deg) translateZ(40px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(40px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(40px);
+}
